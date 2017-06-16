@@ -17,4 +17,4 @@ app = Flask(__name__)
 @app.route('/templates/<name>')
 def hello(name=None):
     #return render_template('template.html', name=name)
-    return render_template('template.html', name=name)
+    return render_template('template_name.html', name=name)
