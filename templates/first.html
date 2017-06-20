@@ -1,6 +1,3 @@
-names = ['ask','me','something']
-
-
 <!DOCTYPE html>
 <html>
  <head>
@@ -9,8 +6,9 @@ names = ['ask','me','something']
  </head>
  <body>
   <ul>
-      {% for x in names %}
-      <li> {{Hello, x }} </li>
+      {% for x in lst %}
+      <li> {{ x.title }} </li>
+      <li> {{ x.news }} </li>
       {% endfor %}
   </ul>
  </body>
