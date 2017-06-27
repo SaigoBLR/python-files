@@ -5,11 +5,7 @@
      <title>(якобы-бы) Cтраница (как-бы) новостей.</title>
  </head>
  <body>
-  <ul>
-      {% for x in news %}
-      <li> {{ x.title }} </li>
-      <li> {{ x.content }} </li>
-      {% endfor %}
-  </ul>
+   <p><b>Title:</b> {{ news.title }}</p>
+   <p><b>Content:</b> {{ news.content }}</p>
  </body>
 </html>

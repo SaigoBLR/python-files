@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta charset="UTF-8">
+     <title>(якобы-бы) Cтраница (как-бы) новостей.</title>
+ </head>
+ <body>
+   <ul>
+     <!-- we specified `all_available_news` in list_news() function -->
+      {% for news in all_available_news %}
+      <li> {{ news.title }} </li>
+      <li> {{ news.content }} </li>
+      {% endfor %}
+  </ul>
+ </body>
+</html>
