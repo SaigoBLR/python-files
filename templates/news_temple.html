@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta charset="UTF-8">
+     <title>(якобы-бы) Cтраница (как-бы) новостей.</title>
+ </head>
+ <body>
+  <ul>
+      {% for x in novosti %}
+      <li> {{ x.title }} </li>
+      <li> {{ x.content }} </li>
+      <li> {{ x.author }} </li>
+      {% endfor %}
+  </ul>
+ </body>
+</html>
+
