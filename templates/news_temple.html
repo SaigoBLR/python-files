@@ -7,6 +7,8 @@
  <body>
   <ul>
       {% for x in novosti %}
+      <li> {{ x.title }} </li>
+      <li> {{ x.content }} </li>
       <li> {{ x.author }} </li>
       {% endfor %}
   </ul>
