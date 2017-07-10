@@ -2,13 +2,11 @@
 <html>
  <head>
      <meta charset="UTF-8">
-     <title>(якобы-бы) Cтраница (как-бы) новостей.</title>
+     <title>Вывод авторов новостей.</title>
  </head>
  <body>
   <ul>
       {% for x in novosti %}
-      <li> {{ x.title }} </li>
-      <li> {{ x.content }} </li>
       <li> {{ x.author }} </li>
       {% endfor %}
   </ul>

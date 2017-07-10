@@ -12,12 +12,12 @@ all_news = [conauth1,conauth2,conauth3]
 from flask import Flask,render_template
 app = Flask(__name__)
 
-@app.route('/posts')
-def list_news():
+@app.route('/authors')
+def list_authors():
     return render_template('news_temple.html', novosti= all_news)
 
-@app.route('/posts/<news_id>')
-def view_news(news_id):
-    news_id_int = int(news_id)
-    news = all_news[news_id_int]
-    return render_template('view_news.html',news = news)
+#@app.route('/posts/<news_id>')
+#def view_news(news_id):
+#    news_id_int = int(news_id)
+#    news = all_news[news_id_int]
+#    return render_template('view_news.html',news = news)
